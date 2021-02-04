@@ -1,29 +1,15 @@
 //
-//  ExploreCell.swift
+//  ExploreCellCollectionViewCell.swift
 //  LetsEat
 //
-//  Created by Tung Nguyen on 04.02.21.
+//  Created by Michael Nguyen on 04.02.21.
 //
 
 import UIKit
 
-class ExploreCell: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+class ExploreCell: UICollectionViewCell {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    @IBOutlet weak var lblName: UILabel!
+    
+    @IBOutlet weak var imgExplore: UIImageView!
 }

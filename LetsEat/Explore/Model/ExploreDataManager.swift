@@ -22,4 +22,12 @@ class ExploreDataManager {
         }
         return items as! [[String:AnyObject]]
     }
+    
+    func numberOfItems() -> Int {
+        items.count
+    }
+    
+    func explore(at index:IndexPath) -> ExploreItem {
+        items[index.item]
+    }
 }
