@@ -19,6 +19,8 @@
 		54BCA2FF25CC4271008844EA /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54BCA2FE25CC4271008844EA /* ExploreData.plist */; };
 		54BCA30225CC431F008844EA /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCA30125CC431F008844EA /* ExploreItem.swift */; };
 		54BCA30525CC4510008844EA /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCA30425CC4510008844EA /* ExploreDataManager.swift */; };
+		54BCA30E25CD2E5C008844EA /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54BCA30D25CD2E5C008844EA /* Locations.plist */; };
+		54BCA31125CD3029008844EA /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCA31025CD3029008844EA /* LocationDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		54BCA2FE25CC4271008844EA /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
 		54BCA30125CC431F008844EA /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
 		54BCA30425CC4510008844EA /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
+		54BCA30D25CD2E5C008844EA /* Locations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Locations.plist; path = LetsEat/Explore/View/Locations.plist; sourceTree = SOURCE_ROOT; };
+		54BCA31025CD3029008844EA /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationDataManager.swift; path = LetsEat/Explore/View/LocationDataManager.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 		127DA08F25CC998D00102F2A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				54BCA30D25CD2E5C008844EA /* Locations.plist */,
+				54BCA31025CD3029008844EA /* LocationDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 				54BCA2FF25CC4271008844EA /* ExploreData.plist in Resources */,
 				12A7EDB025CB3657007E6C37 /* LaunchScreen.storyboard in Resources */,
 				12A7EDBB25CB411B007E6C37 /* Assets.xcassets in Resources */,
+				54BCA30E25CD2E5C008844EA /* Locations.plist in Resources */,
 				12A7EDAB25CB3656007E6C37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +230,7 @@
 				12A7EDA625CB3656007E6C37 /* SceneDelegate.swift in Sources */,
 				54BCA2F325CBEDF9008844EA /* ExploreViewController.swift in Sources */,
 				54BCA30525CC4510008844EA /* ExploreDataManager.swift in Sources */,
+				54BCA31125CD3029008844EA /* LocationDataManager.swift in Sources */,
 				127DA09125CC99DA00102F2A /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
