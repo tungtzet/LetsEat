@@ -14,6 +14,8 @@
 		12A7EDAB25CB3656007E6C37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A7EDA925CB3656007E6C37 /* Main.storyboard */; };
 		12A7EDB025CB3657007E6C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A7EDAE25CB3657007E6C37 /* LaunchScreen.storyboard */; };
 		12A7EDBB25CB411B007E6C37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A7EDBA25CB411B007E6C37 /* Assets.xcassets */; };
+		12DC494C25CDEDDB00258390 /* MapLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12DC494B25CDEDDB00258390 /* MapLocations.plist */; };
+		12DC494F25CDEE8400258390 /* RestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC494E25CDEE8400258390 /* RestaurantItem.swift */; };
 		54BCA2F325CBEDF9008844EA /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCA2F225CBEDF9008844EA /* ExploreViewController.swift */; };
 		54BCA2F825CC0905008844EA /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCA2F725CC0905008844EA /* RestaurantListViewController.swift */; };
 		54BCA2FF25CC4271008844EA /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54BCA2FE25CC4271008844EA /* ExploreData.plist */; };
@@ -34,6 +36,8 @@
 		12A7EDAF25CB3657007E6C37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12A7EDB125CB3657007E6C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12A7EDBA25CB411B007E6C37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12DC494B25CDEDDB00258390 /* MapLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapLocations.plist; sourceTree = "<group>"; };
+		12DC494E25CDEE8400258390 /* RestaurantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantItem.swift; sourceTree = "<group>"; };
 		54BCA2F225CBEDF9008844EA /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		54BCA2F725CC0905008844EA /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 		54BCA2FB25CC349F008844EA /* CollectionViewBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = CollectionViewBasics.playground; path = ../../CollectionViewBasics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -100,6 +104,7 @@
 		12A7EDA225CB3656007E6C37 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				12DC494925CDED1600258390 /* Map */,
 				127DA08D25CC995A00102F2A /* Location */,
 				127DA08B25CC94EC00102F2A /* TableViewBasics.playground */,
 				54BCA2FB25CC349F008844EA /* CollectionViewBasics.playground */,
@@ -113,6 +118,23 @@
 				12A7EDB125CB3657007E6C37 /* Info.plist */,
 			);
 			path = LetsEat;
+			sourceTree = "<group>";
+		};
+		12DC494925CDED1600258390 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				12DC494A25CDED3700258390 /* Model */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		12DC494A25CDED3700258390 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12DC494B25CDEDDB00258390 /* MapLocations.plist */,
+				12DC494E25CDEE8400258390 /* RestaurantItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		54BCA2F125CBED8A008844EA /* Explore */ = {
@@ -212,6 +234,7 @@
 				12A7EDB025CB3657007E6C37 /* LaunchScreen.storyboard in Resources */,
 				12A7EDBB25CB411B007E6C37 /* Assets.xcassets in Resources */,
 				54BCA30E25CD2E5C008844EA /* Locations.plist in Resources */,
+				12DC494C25CDEDDB00258390 /* MapLocations.plist in Resources */,
 				12A7EDAB25CB3656007E6C37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +253,7 @@
 				12A7EDA625CB3656007E6C37 /* SceneDelegate.swift in Sources */,
 				54BCA2F325CBEDF9008844EA /* ExploreViewController.swift in Sources */,
 				54BCA30525CC4510008844EA /* ExploreDataManager.swift in Sources */,
+				12DC494F25CDEE8400258390 /* RestaurantItem.swift in Sources */,
 				54BCA31125CD3029008844EA /* LocationDataManager.swift in Sources */,
 				127DA09125CC99DA00102F2A /* LocationViewController.swift in Sources */,
 			);
