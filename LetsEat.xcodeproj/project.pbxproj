@@ -14,6 +14,11 @@
 		12A7EDAB25CB3656007E6C37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A7EDA925CB3656007E6C37 /* Main.storyboard */; };
 		12A7EDB025CB3657007E6C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A7EDAE25CB3657007E6C37 /* LaunchScreen.storyboard */; };
 		12A7EDBB25CB411B007E6C37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A7EDBA25CB411B007E6C37 /* Assets.xcassets */; };
+		12D9D90F25CF1C5400A6B2D0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9D90E25CF1C5400A6B2D0 /* DataManager.swift */; };
+		12D9D91225CF216100A6B2D0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9D91125CF216100A6B2D0 /* MapViewController.swift */; };
+		12D9D91725CF348000A6B2D0 /* RestaurantDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D9D91625CF348000A6B2D0 /* RestaurantDetail.storyboard */; };
+		12D9D91B25CF353100A6B2D0 /* ReviewForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D9D91A25CF353100A6B2D0 /* ReviewForm.storyboard */; };
+		12D9D91F25CF355D00A6B2D0 /* PhotoFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D9D91E25CF355D00A6B2D0 /* PhotoFilter.storyboard */; };
 		12DC494C25CDEDDB00258390 /* MapLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12DC494B25CDEDDB00258390 /* MapLocations.plist */; };
 		12DC494F25CDEE8400258390 /* RestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC494E25CDEE8400258390 /* RestaurantItem.swift */; };
 		12DC495325CDF2E600258390 /* MapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC495225CDF2E600258390 /* MapDataManager.swift */; };
@@ -37,6 +42,11 @@
 		12A7EDAF25CB3657007E6C37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12A7EDB125CB3657007E6C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12A7EDBA25CB411B007E6C37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12D9D90E25CF1C5400A6B2D0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		12D9D91125CF216100A6B2D0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		12D9D91625CF348000A6B2D0 /* RestaurantDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RestaurantDetail.storyboard; sourceTree = "<group>"; };
+		12D9D91A25CF353100A6B2D0 /* ReviewForm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReviewForm.storyboard; sourceTree = "<group>"; };
+		12D9D91E25CF355D00A6B2D0 /* PhotoFilter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoFilter.storyboard; sourceTree = "<group>"; };
 		12DC494B25CDEDDB00258390 /* MapLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapLocations.plist; sourceTree = "<group>"; };
 		12DC494E25CDEE8400258390 /* RestaurantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantItem.swift; sourceTree = "<group>"; };
 		12DC495225CDF2E600258390 /* MapDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataManager.swift; sourceTree = "<group>"; };
@@ -106,6 +116,10 @@
 		12A7EDA225CB3656007E6C37 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				12D9D91D25CF354200A6B2D0 /* PhotoFilter */,
+				12D9D91925CF34AA00A6B2D0 /* ReviewForm */,
+				12D9D91525CF344F00A6B2D0 /* RestaurantDetail */,
+				12D9D90D25CF1C0700A6B2D0 /* Misc */,
 				12DC494925CDED1600258390 /* Map */,
 				127DA08D25CC995A00102F2A /* Location */,
 				127DA08B25CC94EC00102F2A /* TableViewBasics.playground */,
@@ -122,10 +136,43 @@
 			path = LetsEat;
 			sourceTree = "<group>";
 		};
+		12D9D90D25CF1C0700A6B2D0 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				12D9D90E25CF1C5400A6B2D0 /* DataManager.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		12D9D91525CF344F00A6B2D0 /* RestaurantDetail */ = {
+			isa = PBXGroup;
+			children = (
+				12D9D91625CF348000A6B2D0 /* RestaurantDetail.storyboard */,
+			);
+			path = RestaurantDetail;
+			sourceTree = "<group>";
+		};
+		12D9D91925CF34AA00A6B2D0 /* ReviewForm */ = {
+			isa = PBXGroup;
+			children = (
+				12D9D91A25CF353100A6B2D0 /* ReviewForm.storyboard */,
+			);
+			path = ReviewForm;
+			sourceTree = "<group>";
+		};
+		12D9D91D25CF354200A6B2D0 /* PhotoFilter */ = {
+			isa = PBXGroup;
+			children = (
+				12D9D91E25CF355D00A6B2D0 /* PhotoFilter.storyboard */,
+			);
+			path = PhotoFilter;
+			sourceTree = "<group>";
+		};
 		12DC494925CDED1600258390 /* Map */ = {
 			isa = PBXGroup;
 			children = (
 				12DC494A25CDED3700258390 /* Model */,
+				12D9D91125CF216100A6B2D0 /* MapViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -235,8 +282,11 @@
 			files = (
 				54BCA2FF25CC4271008844EA /* ExploreData.plist in Resources */,
 				12A7EDB025CB3657007E6C37 /* LaunchScreen.storyboard in Resources */,
+				12D9D91F25CF355D00A6B2D0 /* PhotoFilter.storyboard in Resources */,
+				12D9D91B25CF353100A6B2D0 /* ReviewForm.storyboard in Resources */,
 				12A7EDBB25CB411B007E6C37 /* Assets.xcassets in Resources */,
 				54BCA30E25CD2E5C008844EA /* Locations.plist in Resources */,
+				12D9D91725CF348000A6B2D0 /* RestaurantDetail.storyboard in Resources */,
 				12DC494C25CDEDDB00258390 /* MapLocations.plist in Resources */,
 				12A7EDAB25CB3656007E6C37 /* Main.storyboard in Resources */,
 			);
@@ -250,10 +300,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				54BCA30225CC431F008844EA /* ExploreItem.swift in Sources */,
+				12D9D90F25CF1C5400A6B2D0 /* DataManager.swift in Sources */,
 				12DC495325CDF2E600258390 /* MapDataManager.swift in Sources */,
 				127DA08825CC88E700102F2A /* ExploreCell.swift in Sources */,
 				12A7EDA425CB3656007E6C37 /* AppDelegate.swift in Sources */,
 				54BCA2F825CC0905008844EA /* RestaurantListViewController.swift in Sources */,
+				12D9D91225CF216100A6B2D0 /* MapViewController.swift in Sources */,
 				12A7EDA625CB3656007E6C37 /* SceneDelegate.swift in Sources */,
 				54BCA2F325CBEDF9008844EA /* ExploreViewController.swift in Sources */,
 				54BCA30525CC4510008844EA /* ExploreDataManager.swift in Sources */,
@@ -407,6 +459,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VYPDRNY966;
 				INFOPLIST_FILE = LetsEat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -425,6 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VYPDRNY966;
 				INFOPLIST_FILE = LetsEat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

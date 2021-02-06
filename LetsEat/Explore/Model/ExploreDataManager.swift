@@ -7,20 +7,13 @@
 
 import Foundation
 
-class ExploreDataManager {
+class ExploreDataManager: DataManager {
     fileprivate var items: [ExploreItem] = []
     
     func fetch() {
-        for data in loadData() {
+        for data in load(file: "ExploreData") {
             items.append(ExploreItem(dict: data))
         }
-    }
-    
-    fileprivate func loadData() -> [[String: AnyObject]] {
-        guard let path = Bundle.main.path (forResource: "ExploreData", ofType: "plist"), let items = NSArray(contentsOfFile: path) else {
-            return [[:]]
-        }
-        return items as! [[String:AnyObject]]
     }
     
     func numberOfItems() -> Int {
