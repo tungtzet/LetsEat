@@ -113,11 +113,11 @@
                                         <connections>
                                             <outlet property="imgExplore" destination="TkH-HC-IMc" id="3s7-Hb-OhE"/>
                                             <outlet property="lblName" destination="ZRl-xx-vke" id="Nc7-5t-MAf"/>
-                                            <segue destination="hTJ-XJ-NBU" kind="show" id="71A-9Q-uQt"/>
+                                            <segue destination="hTJ-XJ-NBU" kind="show" identifier="restaurantList" id="71A-9Q-uQt"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header" id="Jx0-Kd-lWF">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header" id="Jx0-Kd-lWF" customClass="ExploreHeaderView" customModule="LetsEat" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -157,7 +157,7 @@
                                                     </constraints>
                                                     <state key="normal" image="btn-location"/>
                                                     <connections>
-                                                        <segue destination="fkU-3l-ZEl" kind="presentation" id="gBA-qG-35z"/>
+                                                        <segue destination="fkU-3l-ZEl" kind="presentation" identifier="locationList" id="gBA-qG-35z"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -183,6 +183,9 @@
                                         <constraint firstItem="510-or-j6k" firstAttribute="leading" secondItem="Jx0-Kd-lWF" secondAttribute="leading" id="Tz4-LN-Mpt"/>
                                         <constraint firstItem="510-or-j6k" firstAttribute="top" secondItem="Jx0-Kd-lWF" secondAttribute="top" id="g8c-LP-bct"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="lblLocation" destination="rAd-nS-jpl" id="giB-Qo-v7Y"/>
+                                    </connections>
                                 </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="thM-tP-rpn" id="iBg-Re-UDU"/>
@@ -259,7 +262,11 @@
                                 <segue destination="REO-mk-oTi" kind="unwind" unwindAction="unwindLocationCancelWithSegue:" id="sk6-bF-oRB"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="XJX-xa-cq7"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="XJX-xa-cq7">
+                            <connections>
+                                <segue destination="REO-mk-oTi" kind="unwind" unwindAction="unwindLocationDoneWithSegue:" id="t12-ju-Vhf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="YoB-vd-5zG" id="853-Qu-AKI"/>
