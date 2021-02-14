@@ -38,6 +38,7 @@ class RestaurantDetailViewController: UITableViewController {
 private extension RestaurantDetailViewController {
     func createRating() {
         ratingsView.rating = 3.5
+        ratingsView.isEnabled = true
     }
     
     func initialize() {
