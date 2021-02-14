@@ -195,7 +195,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgj-Bj-2jp">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgj-Bj-2jp" customClass="RatingsView" customModule="LetsEat" customModuleProvider="target">
                                                     <rect key="frame" x="151" y="43" width="205" height="34"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -466,6 +466,7 @@
                         <outlet property="lblName" destination="6er-aK-n02" id="iFa-1o-D2w"/>
                         <outlet property="lblOverallRating" destination="zON-CP-XRT" id="Fzz-he-hsH"/>
                         <outlet property="lblTableDetails" destination="QHZ-op-gz0" id="FQy-ht-Y7s"/>
+                        <outlet property="ratingsView" destination="Pgj-Bj-2jp" id="1YC-26-Qax"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbX-wO-Y8z" userLabel="First Responder" sceneMemberID="firstResponder"/>

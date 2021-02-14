@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1206EDA225D93FA1005AAAEC /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1206EDA125D93FA1005AAAEC /* RatingsView.swift */; };
 		126D132C25D0249200FD38C2 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126D132B25D0249200FD38C2 /* LocationItem.swift */; };
 		126D132F25D0293800FD38C2 /* ExploreHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126D132E25D0293800FD38C2 /* ExploreHeaderView.swift */; };
 		127DA08825CC88E700102F2A /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127DA08725CC88E700102F2A /* ExploreCell.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1206EDA125D93FA1005AAAEC /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 		126D132B25D0249200FD38C2 /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
 		126D132E25D0293800FD38C2 /* ExploreHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHeaderView.swift; sourceTree = "<group>"; };
 		127DA08725CC88E700102F2A /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				12D9D91A25CF353100A6B2D0 /* ReviewForm.storyboard */,
+				1206EDA125D93FA1005AAAEC /* RatingsView.swift */,
 			);
 			path = ReviewForm;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				126D132C25D0249200FD38C2 /* LocationItem.swift in Sources */,
+				1206EDA225D93FA1005AAAEC /* RatingsView.swift in Sources */,
 				126D132F25D0293800FD38C2 /* ExploreHeaderView.swift in Sources */,
 				54BCA30225CC431F008844EA /* ExploreItem.swift in Sources */,
 				12D9D90F25CF1C5400A6B2D0 /* DataManager.swift in Sources */,
