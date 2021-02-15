@@ -36,6 +36,9 @@ class RestaurantDetailViewController: UITableViewController {
 }
 
 private extension RestaurantDetailViewController {
+    @IBAction func unwindReviewCancel (segue:UIStoryboard) {
+        
+    }
     func createRating() {
         ratingsView.rating = 3.5
         ratingsView.isEnabled = true

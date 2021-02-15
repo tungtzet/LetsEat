@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hS7-gB-9nH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hS7-gB-9nH">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="4190" y="-832"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Review Form View Controller-->
         <scene sceneID="2Lj-qr-Q1h">
             <objects>
-                <tableViewController id="FMe-3H-aSV" sceneMemberID="viewController">
+                <tableViewController id="FMe-3H-aSV" customClass="ReviewFormViewController" customModule="LetsEat" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wbQ-Yd-wf4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,8 +147,18 @@
                                 <segue destination="Wbq-hq-Or1" kind="unwind" unwindAction="unwindReviewCancelWithSegue:" id="RfM-9X-IEh"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yDv-S1-VFB"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yDv-S1-VFB">
+                            <connections>
+                                <action selector="onSaveTapped:" destination="FMe-3H-aSV" id="5UO-Xs-kS5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ratingsView" destination="Jgv-x1-Dm8" id="zl9-dz-4oJ"/>
+                        <outlet property="tfName" destination="uwv-vD-pti" id="GYk-yf-VRW"/>
+                        <outlet property="tfTitle" destination="jdr-kq-Djw" id="Rpf-Vn-qea"/>
+                        <outlet property="tvReview" destination="mfP-Ls-LpI" id="vqa-zj-R9h"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eoT-q7-XLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Wbq-hq-Or1" userLabel="Exit" sceneMemberID="exit"/>

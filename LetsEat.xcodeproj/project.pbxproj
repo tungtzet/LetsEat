@@ -28,6 +28,7 @@
 		128401C625D018D1003A6432 /* Portland.json in Resources */ = {isa = PBXBuildFile; fileRef = 128401B825D018D1003A6432 /* Portland.json */; };
 		128401C725D018D1003A6432 /* San Francisco.json in Resources */ = {isa = PBXBuildFile; fileRef = 128401B925D018D1003A6432 /* San Francisco.json */; };
 		128401CB25D01B29003A6432 /* RestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128401CA25D01B29003A6432 /* RestaurantDataManager.swift */; };
+		12A5EC2825DB008E00B8856D /* ReviewFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A5EC2725DB008E00B8856D /* ReviewFormViewController.swift */; };
 		12A7EDA425CB3656007E6C37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7EDA325CB3656007E6C37 /* AppDelegate.swift */; };
 		12A7EDA625CB3656007E6C37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7EDA525CB3656007E6C37 /* SceneDelegate.swift */; };
 		12A7EDAB25CB3656007E6C37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A7EDA925CB3656007E6C37 /* Main.storyboard */; };
@@ -77,6 +78,7 @@
 		128401B825D018D1003A6432 /* Portland.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Portland.json; sourceTree = "<group>"; };
 		128401B925D018D1003A6432 /* San Francisco.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "San Francisco.json"; sourceTree = "<group>"; };
 		128401CA25D01B29003A6432 /* RestaurantDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDataManager.swift; sourceTree = "<group>"; };
+		12A5EC2725DB008E00B8856D /* ReviewFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFormViewController.swift; sourceTree = "<group>"; };
 		12A7EDA025CB3656007E6C37 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A7EDA325CB3656007E6C37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12A7EDA525CB3656007E6C37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 			children = (
 				12D9D91A25CF353100A6B2D0 /* ReviewForm.storyboard */,
 				1206EDA125D93FA1005AAAEC /* RatingsView.swift */,
+				12A5EC2725DB008E00B8856D /* ReviewFormViewController.swift */,
 			);
 			path = ReviewForm;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A5EC2825DB008E00B8856D /* ReviewFormViewController.swift in Sources */,
 				126D132C25D0249200FD38C2 /* LocationItem.swift in Sources */,
 				1206EDA225D93FA1005AAAEC /* RatingsView.swift in Sources */,
 				126D132F25D0293800FD38C2 /* ExploreHeaderView.swift in Sources */,
