@@ -50,6 +50,7 @@
 		12DC494F25CDEE8400258390 /* RestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC494E25CDEE8400258390 /* RestaurantItem.swift */; };
 		12DC495325CDF2E600258390 /* MapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC495225CDF2E600258390 /* MapDataManager.swift */; };
 		12E5973625E45B760012F6AF /* PhotoFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5973525E45B760012F6AF /* PhotoFilterViewController.swift */; };
+		12EB5ECB25F020E700DFB1DB /* LetsEatModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12EB5EC925F020E700DFB1DB /* LetsEatModel.xcdatamodeld */; };
 		12F1625E25E2F14F001FEFDA /* ImageFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1625D25E2F14F001FEFDA /* ImageFiltering.swift */; };
 		54980EEF25E40063005F00CE /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54980EEE25E40063005F00CE /* FilterCell.swift */; };
 		54BCA2F325CBEDF9008844EA /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BCA2F225CBEDF9008844EA /* ExploreViewController.swift */; };
@@ -108,6 +109,7 @@
 		12DC494E25CDEE8400258390 /* RestaurantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantItem.swift; sourceTree = "<group>"; };
 		12DC495225CDF2E600258390 /* MapDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataManager.swift; sourceTree = "<group>"; };
 		12E5973525E45B760012F6AF /* PhotoFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterViewController.swift; sourceTree = "<group>"; };
+		12EB5ECA25F020E700DFB1DB /* LetsEatModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LetsEatModel.xcdatamodel; sourceTree = "<group>"; };
 		12F1625D25E2F14F001FEFDA /* ImageFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFiltering.swift; sourceTree = "<group>"; };
 		54980EEE25E40063005F00CE /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 		54BCA2F225CBEDF9008844EA /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 		12D9D90D25CF1C0700A6B2D0 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				12EB5EC825F020A300DFB1DB /* Core Data */,
 				12B67FD625D1D5E800CEDA1F /* NoData */,
 				128401AB25D01852003A6432 /* JSON */,
 				12D9D90E25CF1C5400A6B2D0 /* DataManager.swift */,
@@ -312,6 +315,14 @@
 				12DC495225CDF2E600258390 /* MapDataManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		12EB5EC825F020A300DFB1DB /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				12EB5EC925F020E700DFB1DB /* LetsEatModel.xcdatamodeld */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 		54BCA2F125CBED8A008844EA /* Explore */ = {
@@ -469,6 +480,7 @@
 				54BCA30525CC4510008844EA /* ExploreDataManager.swift in Sources */,
 				12DC494F25CDEE8400258390 /* RestaurantItem.swift in Sources */,
 				54BCA31125CD3029008844EA /* LocationDataManager.swift in Sources */,
+				12EB5ECB25F020E700DFB1DB /* LetsEatModel.xcdatamodeld in Sources */,
 				127DA09125CC99DA00102F2A /* LocationViewController.swift in Sources */,
 				128401A825CFE063003A6432 /* RestaurantDetailViewController.swift in Sources */,
 				128F69EE25DF043200DC8ED8 /* FilterManager.swift in Sources */,
@@ -673,6 +685,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		12EB5EC925F020E700DFB1DB /* LetsEatModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				12EB5ECA25F020E700DFB1DB /* LetsEatModel.xcdatamodel */,
+			);
+			currentVersion = 12EB5ECA25F020E700DFB1DB /* LetsEatModel.xcdatamodel */;
+			path = LetsEatModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 12A7ED9825CB3656007E6C37 /* Project object */;
 }
